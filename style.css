@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(245.59deg, #194320 0%, #143b18 28.53%, #133917 75.52%);
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 25px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.navlist {
+  display: flex;
+  gap: 40px;
+  transition: all 0.5s ease;
+}
+
+.navlist a {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  padding: 100px 10% 50px;
+  min-height: 100vh;
+}
+
+.hero-text h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.hero-text h3 {
+  color: #f44336;
+  margin-top: 10px;
+}
+
+.hero-text p {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.hero-text a {
+  display: inline-block;
+  background-color: #49a352;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin: 10px 10px 0 0;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+footer {
+  padding: 20px 10%;
+  text-align: center;
+  background: #0f2814;
+}
+
+footer video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    background: #143b18;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .navlist.active {
+    right: 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .hero {
+    padding: 120px 5% 50px;
+    text-align: center;
+  }
+}
