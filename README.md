@@ -26,5 +26,5 @@ This is a creative, browser-based interface inspired by the popular game **Mini 
 ---
 
 **Created by Debashish Parida**  
-GitHub: [github.com/debashish-5](https://github.com/debashish-5)  
-LinkedIn: [linkedin.com/in/debashish-parida](https://linkedin.com/in/debashish-parida)
+[GitHub](https://github.com/debashish-5)  
+[LinkedIn](https://linkedin.com/in/debashish-parida-a260b1355)
